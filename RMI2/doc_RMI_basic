@@ -1,0 +1,31 @@
+Document a remettre 
+
+*Deux thread pour la lecture et l'ecriture simultané (PollThread et Threadchat)
+
+*l'interface serveur definit les methodes 
+    - messageBienvenue() pour envover un message de bienvenue au nouveau client 
+    - ecrire(String string) pour envoyer un message au serveur 
+    - List<String> getMessages(int pos) pour recuperrer les messages coté clients a partir d'une possition
+
+    - int getNbMsgSend() pour recuperre le nbre de message envoyés au serveur 
+
+Description: 
+
+-on lance le serveur et le client 
+
+coté client
+    -initialisation de la methode messageBienvenue()
+    - demarage des deux threats
+
+    le Threadchat ecoute les enntrées clavier et les envoie au serveur avec la methode ecrire(String string).
+    le PollThread demande les messages du serveur et les affiche au client 
+
+
+    
+    
+ 
+
+    
+
+
+

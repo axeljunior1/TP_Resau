@@ -1,0 +1,23 @@
+Document RMI callback 
+
+
+*l'interface serveur definit les methodes 
+
+    -addCBClient(String name,CBClientIntf CBClient) qui ajoute un client au serveur
+    -notifyMe(String name) qui notifie les differents clients: il envoi diffents type de messages 
+    -isAUser(String name) qui verifie si un nom dutilisatur exite deja 
+    -sendMessage(String name,String msg) permet a un client d'envoyer un message au serveur
+    - List<String> AnciensMessages() qui la liste des  ancien messages aux nouveaux clients 
+    -close(String name) qui notifie les utilisateurs du depart d'un client 
+    
+          
+le client se connecte au serveur, 
+il entre son nom, recoit une notification de bien venue de la part du serveur (si le nom est deja pris alors il doit entrer un autre)
+si la discussions avait ete etabli il ya longtemps alors il recoit les ancienc messages 
+ensuit il peut taper ses messages, chatter avec les autres 
+
+envoyer et recevoir en meme temps 
+
+si il decide de quiter, alors il il entre "q" au clavier 
+
+il recoit un message d'aurevoir  et les autres recoivent une notification de son depart!!    
